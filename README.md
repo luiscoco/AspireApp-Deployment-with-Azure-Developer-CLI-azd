@@ -48,9 +48,18 @@ It helps set up the structure for your application, including the necessary conf
 azd init
 ```
 
+![image](https://github.com/user-attachments/assets/a01143c3-cb8d-46ed-b3f7-5f235dcccc6d)
+
+### 3.2. Azure login
+
+```
+azd login
+```
+
+![image](https://github.com/user-attachments/assets/87f36c28-b434-4468-8dd1-3c5c60a7a817)
 
 
-### 3.2. Provision Resources (azd provision):
+### 3.3. Provision Resources (azd provision):
 
 ```
 azd provision
@@ -60,7 +69,7 @@ This command creates all the Azure resources defined for your application, such 
 
 It uses Infrastructure as Code (usually Bicep or Terraform) to deploy the resources
 
-## 3.3. Deploy an Application (azd deploy)
+## 3.4. Deploy an Application (azd deploy)
 
 ```
 azd deploy
@@ -70,7 +79,7 @@ Once the resources are created, this command deploys your application to Azure
 
 It takes care of both application code and configuration, ensuring everything is deployed to the right services
 
-## 3.4. (OPTINAL) we run azd up"
+## 3.5. (OPTINAL) we run azd up"
 
 
 
