@@ -1,10 +1,32 @@
 # How to deploy an Aspire .NET 9 application with Azure Developers CLI (azd)
 
-## 1. We create the application with Visual Studio 2022 Community Edition and .NET 9
+## 1. Install Azure Developer CLI
+
+See the detailed information in this URL:
+
+https://learn.microsoft.com/es-es/azure/developer/azure-developer-cli/install-azd
+
+We run this command to install Azure Developer CLI (azd)
+
+```
+choco install azd
+```
+
+![image](https://github.com/user-attachments/assets/6b73786f-45b3-47ac-b471-47b461319b6d)
+
+We verify the azd installation
+
+```
+azd version
+```
+
+![image](https://github.com/user-attachments/assets/aa03eec7-8c2e-4701-8ac9-70ba42ea8163)
+
+## 2. We create the application with Visual Studio 2022 Community Edition and .NET 9
 
 
 
-## 2. We run the azd commands
+## 3. We run the azd commands
 
 We have to right click on the Solution name and select the menu option **Open Folder in File Explorer**
 
@@ -16,7 +38,7 @@ Now we can run the **cmd** to open the command prompt for running the **azd** co
 
 ![image](https://github.com/user-attachments/assets/dc8e4237-d605-4a61-9c7d-20c877fb6496)
 
-### 2.1. Initialize an Application (azd init)
+### 3.1. Initialize an Application (azd init)
 
 This initializes a new Azure Developer environment. You can choose a template or provide an existing project
 
@@ -28,7 +50,7 @@ azd init
 
 
 
-### 2.2. Provision Resources (azd provision):
+### 3.2. Provision Resources (azd provision):
 
 ```
 azd provision
@@ -38,7 +60,7 @@ This command creates all the Azure resources defined for your application, such 
 
 It uses Infrastructure as Code (usually Bicep or Terraform) to deploy the resources
 
-## 2.3. Deploy an Application (azd deploy)
+## 3.3. Deploy an Application (azd deploy)
 
 ```
 azd deploy
@@ -48,8 +70,14 @@ Once the resources are created, this command deploys your application to Azure
 
 It takes care of both application code and configuration, ensuring everything is deployed to the right services
 
-## 2.4. (OPTINAL) we run azd up"
+## 3.4. (OPTINAL) we run azd up"
 
-## 3. We verify the deployment in Azure Portal
 
-## 4. (OPTIONAL) We can create 
+
+## 4. We verify the deployment in Azure Portal
+
+
+
+## 5. (OPTIONAL) We can create 
+
+
