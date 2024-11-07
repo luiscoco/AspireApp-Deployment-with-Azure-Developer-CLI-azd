@@ -53,11 +53,10 @@ azd init
 ### 3.2. Azure login
 
 ```
-azd login
+azd auth login
 ```
 
-![image](https://github.com/user-attachments/assets/87f36c28-b434-4468-8dd1-3c5c60a7a817)
-
+![image](https://github.com/user-attachments/assets/41107dd2-f0ed-4282-b7a6-8e9ff36ab104)
 
 ### 3.3. Provision Resources (azd provision):
 
